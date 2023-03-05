@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h1>Hi there! This page is about solution task to decode string.</h1>
+      <p>
+        An encoded string (s) is given, the task is to decode it. The pattern in
+        which the strings are encoded is as follows.
+      </p>
+      <p>
+        <i>
+          &lt;count&gt;&#91;sub_str&#93; &equals;&equals;&gt; The substring
+          &quot;sub_str&quot; appears count times.
+        </i>
+      </p>
+    </section>
+    <section>
+      <h3>Results</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Solution</th>
+            <th>Input string</th>
+            <th>Output string</th>
+            <th>Time execution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Decode with linear enumeration</td>
+            <td id="l_i_1">3[a]2[bc]</td>
+            <td id="l_o_1"></td>
+            <td id="l_t_1"></td>
+          </tr>
+          <tr>
+            <td>Decode with linear enumeration</td>
+            <td id="l_i_2">2[a2[b]]</td>
+            <td id="l_o_2"></td>
+            <td id="l_t_2"></td>
+          </tr>
+          <tr>
+            <td>Decode with linear enumeration</td>
+            <td id="l_i_3">21[a9[b]c12[ef]]</td>
+            <td id="l_o_3"></td>
+            <td id="l_t_3"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid;
+  }
+  td {
+    font-size: normal;
+    max-width: 500px;
+    word-wrap: break-word;
+  }
+</style>
