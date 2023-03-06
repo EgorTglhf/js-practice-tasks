@@ -1,11 +1,10 @@
-import count_days from './cound_days_stack.js';
+import count_days_stack from './count_days_stack.js';
+import count_days_two_loops from './count_days_two_loops.js';
 
-let startTime = performance.now();
-o_1.innerText = count_days(i_1.innerText);
-let endTime = performance.now();
-t_1.innerText = endTime - startTime;
+l_o_1.innerText = count_days_two_loops(l_i_1.innerText);
 
-startTime = performance.now();
-o_2.innerText = count_days(i_2.innerText);
-endTime = performance.now();
-t_2.innerText = endTime - startTime;
+s_o_1.innerText = count_days_stack(s_i_1.innerText);
+
+l_o_2.innerText = count_days_two_loops(l_i_2.innerText);
+
+s_o_2.innerText = count_days_stack(s_i_2.innerText);
