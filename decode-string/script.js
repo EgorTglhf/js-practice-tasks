@@ -1,8 +1,6 @@
 import decode_linear from './decode_linear.js';
 import decode_recursive from './decode_recursive.js';
 
-console.log('hello world');
-
 let startTime = performance.now();
 l_o_1.innerText = decode_linear(l_i_1.innerText);
 let endTime = performance.now();
