@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h1>
+        Hi there! This page is about solution of task to find a pair with given
+        Sum exists in Sorted Array.
+      </h1>
+      <p>
+        Given a sorted array A[] of n numbers and another number x, the task is
+        to find two elements in A[] whose sum is exactly x.
+      </p>
+      <p>
+        <i>
+          Input&#58; arr&#91;&#93; &equals; &#123;-3, -1, 0, 2, 1&#125;,
+          x&equals; -2<br />
+          Output&#58; &#123;-3, 1&#125;<br />
+          Explanation&#58; If we calculate the sum of the output,1 + (-3) = -2
+        </i>
+      </p>
+    </section>
+    <section>
+      <h3>Results</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Solution</th>
+            <th>Input</th>
+            <th>Output</th>
+            <th>Complexity</th>
+            <th>Memory</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Linear enumeration</td>
+            <td id="l_i_1">
+              {-16, -14, -13, -11, -9, -7, -3, -1, 0, 2, 4, 5, 7, 8, 9, 12, 15,
+              16, 18, 20, 21}; 6
+            </td>
+            <td id="l_o_1"></td>
+            <td>O(n^2)</td>
+            <td>O(1)</td>
+          </tr>
+          <tr>
+            <td>Using hash</td>
+            <td id="s_i_1">
+              {-16, -14, -13, -11, -9, -7, -3, -1, 0, 2, 4, 5, 7, 8, 9, 12, 15,
+              16, 18, 20, 21}; 0
+            </td>
+            <td id="s_o_1"></td>
+            <td>O(n)</td>
+            <td>O(n)</td>
+          </tr>
+          <tr>
+            <td>Binary search</td>
+            <td id="b_i_1">
+              {-16, -14, -13, -11, -9, -7, -3, -1, 0, 2, 4, 5, 7, 8, 9, 12, 15,
+              16, 18, 20, 21}; 7
+            </td>
+            <td id="b_o_1"></td>
+            <td>O(n log(n))</td>
+            <td>O(1)</td>
+          </tr>
+          <tr>
+            <td>Two pointers</td>
+            <td id="t_i_1">
+              {-16, -14, -13, -11, -9, -7, -3, -1, 0, 2, 4, 5, 7, 8, 9, 12, 15,
+              16, 18, 20, 21}; -3
+            </td>
+            <td id="t_o_1"></td>
+            <td>O(n)</td>
+            <td>O(1)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid;
+  }
+  td {
+    font-size: normal;
+    max-width: 500px;
+    word-wrap: break-word;
+  }
+</style>
