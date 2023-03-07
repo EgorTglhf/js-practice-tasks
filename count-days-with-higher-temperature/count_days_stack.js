@@ -1,9 +1,5 @@
-export default function count_days_stack(daysTemperatureString) {
+export default function count_days_stack(daysTemperatureArray) {
   const stack = [];
-  const daysTemperatureArray = daysTemperatureString
-    .slice(1, daysTemperatureString.length - 1)
-    .split(',')
-    .map((d) => parseInt(d));
 
   const countDaysArray = Array(daysTemperatureArray.length).fill(-1);
 
@@ -22,5 +18,5 @@ export default function count_days_stack(daysTemperatureString) {
     stack.push({ index: i, value: daysTemperatureArray[i] });
   }
 
-  return '{' + countDaysArray.join(', ') + '}';
+  return countDaysArray;
 }

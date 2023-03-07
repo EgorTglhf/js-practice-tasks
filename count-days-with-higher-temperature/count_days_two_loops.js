@@ -1,9 +1,4 @@
-export default function count_days_two_loops(daysTemperatureString) {
-  const daysTemperatureArray = daysTemperatureString
-    .slice(1, daysTemperatureString.length - 1)
-    .split(',')
-    .map((d) => parseInt(d));
-
+export default function count_days_two_loops(daysTemperatureArray) {
   const countDayArray = Array(daysTemperatureArray.length).fill(-1);
 
   for (let i = 0; i < daysTemperatureArray.length; i++) {
@@ -15,5 +10,5 @@ export default function count_days_two_loops(daysTemperatureString) {
     }
   }
 
-  return '{' + countDayArray.join(', ') + '}';
+  return countDayArray;
 }
